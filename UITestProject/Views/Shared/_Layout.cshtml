@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- angular icin  -->
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Content/Angular/BaseModule.js"></script>
+
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/ui-bootstrap-tpls.min.js"></script>
+
+    <!-- angular icin  -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="~/Scripts/jQuery/jQuery-2.1.4.min.js"></script>
+
+    <script src="~/Scripts/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="~/Scripts/fastclick/fastclick.min.js"></script>
+    <!-- AdminLTE App -->
+
+    @*    <script src="~/Scripts/dist/js/app.min.js"></script>*@
+    <!-- AdminLTE for demo purposes -->
+    <script src="~/Scripts/dist/js/demo.js"></script>
+    <title>Zeki  | WebSite</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    @*    <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">*@
+    <link href="~/Scripts/dist/css/AdminLTE.min.css" rel="stylesheet" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    @*    <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">*@
+    <link href="~/Scripts/dist/css/skins/_all-skins.min.css" rel="stylesheet" />
+
+
+    @Styles.Render("~/Content/css")
+    <style>
+        
+    </style>
+
+</head>
+@*<body>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+
+    @RenderSection("scripts", required: false)
+</body>*@
+<body class="hold-transition skin-blue layout-top-nav" ng-app="myApp">
+    <div class="wrapper">
+
+        <header class="main-header">
+            <nav class="navbar navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="/Home" class="navbar-brand"><b>Home Page</b></a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/User"><b>User</b></a> </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <!-- Navbar Right Menu -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <!-- Messages: style can be found in dropdown.less-->
+                            <li class="dropdown messages-menu">
+                                <!-- Menu toggle button -->
+
+                                <!-- User Account Menu -->
+                                <li class="dropdown user user-menu">
+                                    <!-- Menu Toggle Button -->
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <!-- The user image in the navbar-->
+
+                                        <img src="~/Scripts/dist/img/user1-128x128.jpg" class="user-image" alt="User Image">
+                                        <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                                        <span class="hidden-xs">Zeki</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <!-- The user image in the menu -->
+                                        <li class="user-header">
+                                            <img src="~/Scripts/dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
+                                            <p>
+                                                Zeki - Web Developer
+                         
+                                            <small>Member since Nov. 1988</small>
+                                            </p>
+                                        </li>
+                                        <!-- Menu Body -->
+                                        <li class="user-body">
+                                            <div class="col-xs-4 text-center">
+                                                <a href="#">Followers</a>
+                                            </div>
+                                            <div class="col-xs-4 text-center">
+                                                <a href="#">Sales</a>
+                                            </div>
+                                            <div class="col-xs-4 text-center">
+                                                <a href="#">Friends</a>
+                                            </div>
+                                        </li>
+                                        <!-- Menu Footer-->
+                                        <li class="user-footer">
+                                            <div class="pull-left">
+                                                <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-custom-menu -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </header>
+
+        <!-- Full Width Column -->
+        <div class="content-wrapper">
+            <div class="container">
+                <!-- Content Header (Page header) -->
+                <!-- Main content body kısmı burada olusuyor-->
+                <section class="content">
+
+                    @RenderBody()
+                    @Scripts.Render("~/bundles/jquery")
+
+                    @RenderSection("scripts", required: false)
+                    <!-- /.box -->
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="pull-right hidden-xs">
+                    <b>Version</b> 2.3.0         
+                </div>
+                <strong>Copyright &copy; 2016 <a href="http://sb4zeki.salihkarahan.com/Home">Zeki kaya</a>.</strong> All rights reserved.
+       
+            </div>
+            <!-- /.container -->
+        </footer>
+    </div>
+
+</body>
+</html>
