@@ -63,9 +63,9 @@ D:\Releted_Of_Software\githubMvcProject\zeki\UnitTestProject1\bin\Debug\nunit.ut
 D:\Releted_Of_Software\githubMvcProject\zeki\UnitTestProject1\bin\Debug\NUnit.VisualStudio.TestAdapter.dll
 D:\Releted_Of_Software\githubMvcProject\zeki\UnitTestProject1\bin\Debug\TestProjectV1.dll
 D:\Releted_Of_Software\githubMvcProject\zeki\UnitTestProject1\bin\Debug\EntityFramework.dll
+D:\Releted_Of_Software\githubMvcProject\zeki\UnitTestProject1\bin\Debug\WebActivatorEx.dll
 D:\Releted_Of_Software\githubMvcProject\zeki\UnitTestProject1\bin\Debug\System.Web.Optimization.dll
 D:\Releted_Of_Software\githubMvcProject\zeki\UnitTestProject1\bin\Debug\Ninject.Web.Common.dll
-D:\Releted_Of_Software\githubMvcProject\zeki\UnitTestProject1\bin\Debug\WebActivatorEx.dll
 D:\Releted_Of_Software\githubMvcProject\zeki\UnitTestProject1\bin\Debug\Newtonsoft.Json.dll
 D:\Releted_Of_Software\githubMvcProject\zeki\UnitTestProject1\bin\Debug\Ioc.Core.pdb
 D:\Releted_Of_Software\githubMvcProject\zeki\UnitTestProject1\bin\Debug\Ioc.Data.pdb

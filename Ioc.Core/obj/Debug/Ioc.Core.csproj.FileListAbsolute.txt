@@ -24,6 +24,5 @@ D:\Releted_Of_Software\githubMvcProject\zeki\Ioc.Core\bin\Debug\EntityFramework.
 D:\Releted_Of_Software\githubMvcProject\zeki\Ioc.Core\bin\Debug\EntityFramework.SqlServer.dll
 D:\Releted_Of_Software\githubMvcProject\zeki\Ioc.Core\bin\Debug\EntityFramework.xml
 D:\Releted_Of_Software\githubMvcProject\zeki\Ioc.Core\bin\Debug\EntityFramework.SqlServer.xml
-D:\Releted_Of_Software\githubMvcProject\zeki\Ioc.Core\obj\Debug\Ioc.Core.csprojResolveAssemblyReference.cache
 D:\Releted_Of_Software\githubMvcProject\zeki\Ioc.Core\obj\Debug\Ioc.Core.dll
 D:\Releted_Of_Software\githubMvcProject\zeki\Ioc.Core\obj\Debug\Ioc.Core.pdb
