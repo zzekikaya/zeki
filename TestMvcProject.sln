@@ -9,9 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ioc.Data", "Ioc.Data\Ioc.Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ioc.Service", "Ioc.Service\Ioc.Service.csproj", "{34A3A171-1481-4888-9FDF-8D5723EE1B37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{0B994D35-6FEA-439F-A277-671640789F38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTestProject1\UnitTest.csproj", "{0B994D35-6FEA-439F-A277-671640789F38}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectUI", "UITestProject\ProjectUI.csproj", "{53EBFDBA-8918-4DA9-92DF-45070D6D54DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{63B2E250-7BFE-44DE-BE0A-F7ED247A4CFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{53EBFDBA-8918-4DA9-92DF-45070D6D54DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53EBFDBA-8918-4DA9-92DF-45070D6D54DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53EBFDBA-8918-4DA9-92DF-45070D6D54DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B2E250-7BFE-44DE-BE0A-F7ED247A4CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B2E250-7BFE-44DE-BE0A-F7ED247A4CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B2E250-7BFE-44DE-BE0A-F7ED247A4CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B2E250-7BFE-44DE-BE0A-F7ED247A4CFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

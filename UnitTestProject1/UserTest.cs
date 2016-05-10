@@ -21,17 +21,17 @@ namespace UnitTestProject1
         {
             mockUserService = new Mock<IUserService>();
         }
-        [Test]
-        public void TestUserSave()
-        {
-            UserController userController = new UserController(mockUserService.Object);
-            var user = new UserPoco();
-            user.AddressId = 4;
-            user.Email = "test@gmail.com";
-            user.LastName = "kaya";
-            user.Name = "zeki";
-            ActionResult result = userController.Create(user);
-            Assert.IsInstanceOf<ContentResult>(result);
-        }
+        //[Test]
+        //public void TestUserSave()
+        //{
+        //    UserController userController = new UserController(mockUserService.Object);
+        //    var user = new UserPoco();
+        //    user.AddressId = 4;
+        //    user.Email = "test@gmail.com";
+        //    user.LastName = "kaya";
+        //    user.Name = "zeki";
+        //    ActionResult result = userController.Create(user);
+        //    Assert.IsInstanceOf<ContentResult>(result);
+        //}
     }
 }

@@ -6,6 +6,10 @@ namespace Ioc.Service
 {
     public class UserService : IUserService
     {
+        public UserService()
+        {
+
+        }
         private IRepository<User> userRepository;
 
         public UserService(IRepository<User> userRepository)

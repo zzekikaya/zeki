@@ -2,9 +2,8 @@
 using Ioc.Service;
 using Ioc.Service.IService;
 using Ioc.Web.Models;
-
 using Ninject;
-using ProjectUI;
+using ProjectUI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,11 +23,11 @@ namespace Ioc.Web.Controllers
             this._userService = userService;
             this._addressService = addressService;
         }
-        //unit test için yazımıştır.
-        public UserController(IUserService userService )
-        {
-            this._userService = userService; 
-        }
+        ////unit test için yazımıştır.
+        //public UserController(IUserService userService)
+        //{
+        //    this._userService = userService;
+        //}
 
         public ActionResult Index()
         {
@@ -51,11 +50,11 @@ namespace Ioc.Web.Controllers
             foreach (var item in users)
             {
                 item.AddressName = _addressService.GetAddressForUser(item.AddressId).Select(u => new AddressPoco
-              {
-                  Id = u.ID,
-                  Name = u.Name
+                {
+                    Id = u.ID,
+                    Name = u.Name
 
-              }).FirstOrDefault().Name;
+                }).FirstOrDefault().Name;
 
                 userAll.Add(item);
             }
@@ -98,12 +97,15 @@ namespace Ioc.Web.Controllers
 
                     };
                     _userService.InsertUser(userEntity);
+                    //IUserService pb = Proxy.ProxyGenerator<IUserService, UserService>.CreateProxy();
+                    //pb.InsertUser(userEntity);
+                    
                 }
 
             }
             catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
             return RedirectToAction("index");
         }
@@ -173,6 +175,7 @@ namespace Ioc.Web.Controllers
         [HttpPost]
         public ActionResult CreateAddress(AddressPoco address)
         {
+
             try
             {
                 if (address.Id == 0)
@@ -189,7 +192,7 @@ namespace Ioc.Web.Controllers
             }
             catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
             return RedirectToAction("index");
         }
